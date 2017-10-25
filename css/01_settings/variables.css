@@ -1,0 +1,37 @@
+:root {
+    
+    /**--- Color chart
+    -------------------****/
+    --dark: Black;
+    --neutral: LightGray;
+    --light: White;
+    
+    --primary: DodgerBlue;
+    --secondary: Gray;
+    
+    --mild: MediumSeaGreen;
+    --accent: Orange;
+    --heavy: Tomato;
+    
+    /**--- Space chart
+    -------------------****/
+    --space-macro: 10rem;
+    --space-xxl: 8rem;
+    --space-xl: 7.5rem;
+    --space-l: 5rem;
+    --space-m: 2.5rem;
+    --space-s: 1.5rem;
+    --space-xs: 1rem;
+    --space-xxs: 0.5rem;
+    --space-micro: 0.25rem;
+    
+    /**--- Font chart
+    -------------------****/
+    --font-primary: bold 4.8rem/5.2rem Verdana, Geneva, sans-serif;
+    --font-secondary: bold 4.2rem/4.6rem Verdana, Geneva, sans-serif;
+    --font-tertiary: bold 3.6rem/4.0rem Verdana, Geneva, sans-serif;
+    --font-quaternary: bold 3.2rem/3.6rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    --font-quinary: bold 3.0rem/3.4rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    --font-senary: bold 2.8rem/3.2rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    
+}

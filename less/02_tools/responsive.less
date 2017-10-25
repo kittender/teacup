@@ -1,0 +1,15 @@
+.phone(@content) {
+  @media (max-width: @at-large-phone) { @content; }
+}
+.tablet(@content) {
+  @media (min-width: @at-tablet) { @content; }
+}
+.tablet-large(@content) {
+  @media (min-width: @at-large-tablet) { @content; }
+}
+.screen(@content) {
+  @media (min-width: @at-screen) { @content; }
+}
+.screen-large(@content) {
+  @media (min-width: @at-large-screen) { @content; }
+}

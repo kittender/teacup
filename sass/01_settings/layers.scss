@@ -1,0 +1,35 @@
+/* ---------------------------------------------------*
+ | Clean and easy management of positionned layers
+ * ---------------------------------------------------*/
+
+//!* DO NOT EDIT Z-INDEX SCALE *!//
+// Z-Index Scale (private vars)
+// --------------------------------------------------
+$zIndex-1: 100;
+$zIndex-2: 200;
+$zIndex-3: 300;
+$zIndex-4: 400;
+$zIndex-5: 500;
+$zIndex-6: 600;
+$zIndex-7: 700;
+$zIndex-8: 800;
+$zIndex-9: 900;
+$zIndex-10: 1000;
+
+//!* Z-INDEX VALUES ARE ALWAYS DEFINED HERE *!//
+// Z-Index Application
+// --------------------------------------------------
+
+// Example :
+$zIndex-sidebar: $zIndex-2;
+$zIndex-navbar: $zIndex-3;
+$zIndex-tooltips: $zIndex-4;
+$zIndex-popins: $zIndex-5;
+$zIndex-popover: $zIndex-6;
+
+// Specific layer positioned as first layer after popovers, securely put in the range before $zIndex-7
+$zIndex-popover-x: ($zIndex-6 + 1);
+
+// Z-Index Responsive
+// --------------------------------------------------
+

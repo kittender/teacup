@@ -1,0 +1,91 @@
+/* ---------------------------------------------------*
+ | Clean and easy management of positionned layers
+ * ---------------------------------------------------*/
+
+/*
+
+100
+
+ */
+
+/* Example : */
+.avatar { z-index: 100 }
+.avatar-badge { z-index: 110 }
+
+/*
+
+200
+
+ */
+
+/* Example : */
+.sidebar { z-index: 200; }
+
+/*
+
+300
+
+ */
+
+/* Example : */
+.navbar { z-index: 300; }
+.tooltips { z-index: 310; }
+
+/*
+
+400
+
+ */
+
+
+
+/*
+
+500
+
+ */
+
+/* Example : */
+.popins { z-index: 500; }
+
+
+/*
+
+600
+
+ */
+
+/* Example : */
+.popover { z-index: 600; }
+
+
+/*
+
+700
+
+ */
+
+
+
+/*
+
+800
+
+ */
+
+
+
+/*
+
+900
+
+ */
+
+
+/*
+
+1000
+
+ */
+
+

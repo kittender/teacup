@@ -1,0 +1,14 @@
+/* ---------------------------------------------------*
+ | Clean and easy management of fixed layout values
+ * ---------------------------------------------------*/
+
+/* Example : */
+.navbar { height: 80px; }
+.sidebar { width: 250px; }
+.footer { height: 190px; }
+
+.page {
+    margin-top: 80px; /* navbar's height */
+    margin-left: 250px; /* sidebar's width */
+    padding-bottom: 190px; /* footer's height */
+}
