@@ -1,0 +1,227 @@
+/* ---------------------------------------------------*
+ | Web safe entities as Symbols
+ * ---------------------------------------------------*/
+/*/ @see https://www.w3schools.com/cssref/css_entities.asp /*/
+
+/*/ Menus & Buttons
+// ---------------------------------------------------*/
+
+.burger::after {
+    content: "\2261";
+}
+
+.more_horizontal::after {
+    content: "\22EE";
+}
+
+.more_vertical::after {
+    content: "\22EF";
+}
+
+.cross::after {
+    content: "\2715";
+}
+
+.cross_bold::after {
+    content: "\2716";
+}
+
+/*/ Interaction
+// ---------------------------------------------------*/
+
+.bookmark::after {
+    content: "\2616";
+}
+
+.bookmark_empty::after {
+    content: "\2617";
+}
+
+.heart::after {
+    content: "\2665";
+}
+
+.heart_empty::after {
+    content: "\2661";
+}
+
+.star::after {
+    content: "\2605";
+}
+
+.star_empty::after {
+    content: "\2606";
+}
+
+.smile::after {
+    content: "\263B";
+}
+
+.smile_empty::after {
+    content: "\263A";
+}
+
+.flag::after {
+    content: "\2691";
+}
+
+.flag_empty::after {
+    content: "\2690";
+}
+
+/*/ Quotes
+// ---------------------------------------------------*/
+
+.quotes_left::after {
+    content: "\275D";
+}
+
+.quotes_right::after {
+    content: "\275E";
+}
+
+.comma_left::after {
+    content: "\275B";
+}
+
+.comma_right::after {
+    content: "\275C";
+}
+
+/*/ Indicators
+// ---------------------------------------------------*/
+
+.warning::after {
+    content: "\26A0";
+}
+
+.forbidden::after {
+    content: "\26D4";
+}
+
+.question::after {
+    content: "\2753";
+}
+
+.exclamation::after {
+    content: "\2757";
+}
+
+.checkmark::after {
+    content: "\2714";
+}
+
+.ballot::after {
+    content: "\2718";
+}
+
+/*/ Boxes
+// ---------------------------------------------------*/
+
+.box::after {
+    content: "\2610";
+}
+
+.box_checkmark::after {
+    content: "\2611";
+}
+
+.box_cross::after {
+    content: "\2612";
+}
+
+
+/*/ Icons
+// ---------------------------------------------------*/
+
+.phone::after {
+    content: "\260E";
+}
+
+.mail::after {
+    content: "\2709";
+}
+
+.edit::after {
+    content: "\270F";
+}
+
+
+/*/ Shapes
+// ---------------------------------------------------*/
+
+.square::after {
+    content: "\25A0";
+}
+
+.square_empty::after {
+    content: "\25A1";
+}
+
+.square_checked::after {
+    content: "\25A3";
+}
+
+.circle::after {
+    content: "\25CF";
+}
+
+.circle_empty::after {
+    content: "\25CB";
+}
+
+.circle_checked::after {
+    content: "\25C9";
+}
+
+.diamond::after {
+    content: "\25C6";
+}
+
+.diamond_empty::after {
+    content: "\25C7";
+}
+
+.diamond_checked::after {
+    content: "\25C8";
+}
+
+
+/*/ Arrows
+// ---------------------------------------------------*/
+
+.revert::after {
+    content: "\21A9";
+}
+
+.refresh::after {
+    content: "\21BB";
+}
+
+/*/ Simple /*/
+
+.arrow_left::after {
+    content: "\2039";
+}
+
+.arrow_right::after {
+    content: "\203A";
+}
+
+.arrow_up::after {
+    content: "\2227";
+}
+
+.arrow_down::after {
+    content: "\2228";
+}
+
+/*/ Double /*/
+
+.arrow_double_left::after {
+    content: "\226A";
+}
+
+.arrow_double_right::after {
+    content: "\226B";
+}

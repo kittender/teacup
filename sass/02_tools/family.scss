@@ -1,0 +1,70 @@
+/* ---------------------------------------------------*
+ | Web safe Fonts
+ * ---------------------------------------------------*/
+// @see https://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+/* EXAMPLE
+
+    .class {
+        @extend %family;
+    }
+
+*/ 
+
+// Serif
+// ---------------------------------------------------*/
+%georgia {
+    font-family:  Georgia, serif;
+}
+%palatino {
+    font-family:  "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+%times {
+    font-family: "Times New Roman", Times, serif;
+}
+
+// Sans Serif
+// ---------------------------------------------------*/
+
+%arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+%lucida {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+%tahoma {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+%helvetica {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+%verdana {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+
+// Sans Serif - Bold
+// ---------------------------------------------------*/
+%black {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+%impact {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+
+// Cursive
+// ---------------------------------------------------*/
+%cursive {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+// Monospace
+// ---------------------------------------------------*/
+%courier {
+    font-family: "Courier New", Courier, monospace;
+}
+%console {
+    font-family: "Lucida Console", Monaco, monospace;
+}

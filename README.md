@@ -58,6 +58,8 @@ The built-in **tea tree** helps organize your code along **a logical architectur
 ```
 
 #### Features
+* *family* | Web safe font families
+* *symbols* | Web safe symbols & icons
 * *responsive* | Mixins to scope responsive rules
 
 ### Generic
