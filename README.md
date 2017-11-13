@@ -2,6 +2,11 @@
 
 ##### @WIP __φ(．．)  
 
+* Gulp workflow [x] CSS [\_] Less [\_] Sass
+* Grunt workflow [\_] CSS [\_] Less [\_] Sass
+* Sprites generator
+* Mixins, Functions, Tools **@wip**
+
 Start an **eye-end project** with just a *teacup*.
 
  ζζ  
@@ -19,101 +24,53 @@ Task files :
 * *gulpfile.js* | **Gulp**
 * *gruntfile.js* | **Grunt**
 
-## Tea tree
-The built-in **tea tree** helps organize your code along **a logical architecture**, inspired by [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/).
+Build for :
 
-### Vendor
-**00_vendor** | For libraries and external sources
+* *development* | sourcemapped
+* *staging* | prefixed
+* *production* | minified
 
-*Example :* 
+#### Assets
+The assets tree you put in ``src/assets/`` will simply be copied to ``dist/``.  
+Example :  
+
+* src/assets/fonts/comic-sans.woff ``-->`` dist/fonts/comic-sans.woff
+* src/assets/images/avatar.png ``-->`` dist/images/avatar.png
+* src/assets/favicon.ico ``-->`` dist/favicon.ico
+
+## Install
+
+### Starter Kits
+Keep only the starter kit you're gonna use in the source folder :
+
+* src/css
+* src/less
+* src/sass
+
+### Task Files
+Keep the task files you're interested in having :
+
+* gulpfile.js
+* gruntfile.js
+
+Keep only the right declaration of the function ``build`` in the task files :
+
 ```
-/framework.css
-/normalize.css
-```
+/*const build = require('./src/css/build.js');*/
+/*const build = require('./src/less/build.js');*/
+/*const build = require('./src/sass/build.js');*/
 
-### Settings
-**01_settings** | For configuration and variables
-
-*Example :* 
-```
-/variables.less
-/layers.less
-/theme.less
-```
-
-#### Features
-* *variables* | Configuration of colors, fonts, spaces
-* *layers* | Clean management of z-indexes
-* *layout* | Clean management of fixed layout values
-* *responsive* | Breakpoints configuration
-
-### Tools
-**02_tools** | For functions, mixins and utilities
-
-*Example :* 
-```
-/mixins.less
-/functions.less
-/utils.css
-```
-
-#### Features
-* *family* | Web safe font families
-* *symbols* | Web safe symbols & icons
-* *responsive* | Mixins to scope responsive rules
-
-### Generic
-**03_generic** | For globals and wild cards
-
-*Example :* 
-```
-/reset.css
-/set.css
-/print.css
 ```
 
-### Elements
-**04_elements** | For bare tag styles
+### Dependencies
+Remove the ``package.json`` which is present in the project's root.  
+Cut/Paste the ``package.json`` file from your starter kit folder to the project's root :
 
-*Example :* 
-```
-/body.css
-/anchor.css
-/paragraph.css
-/mark.css
-/heading.css
-```
+* ./src/css/package.json ``-->`` ./package.json
+* ./src/less/package.json ``-->`` ./package.json
+* ./src/sass/package.json ``-->`` ./package.json
 
-### Objects
-**05_objects** | For layout components
+Launch your favorite package manager :
 
-*Example :* 
-```
-/header.css
-/navigation.css
-/media.css
-/footer.css
-```
-
-### Components
-**06_components** | For reusable components
-
-*Example :* 
-```
-/popin.css
-/popover.css
-/dropdown.css
-/article.css
-/tooltip.css
-```
-
-### Modules
-**07_modules** | For unique areas and pages
-
-*Example :* 
-```
-/homepage.css
-/profile.css
-/shop.css
-/payment.css
-```
+* ``yarn``
+* ``npm install``
