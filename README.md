@@ -2,7 +2,7 @@
 
 ##### @WIP __φ(．．)  
 
-* Gulp workflow [x] CSS [\_] Less [\_] Sass
+* Gulp workflow [x] CSS [x] Less [\_] Sass
 * Grunt workflow [\_] CSS [\_] Less [\_] Sass
 * Sprites generator
 * Mixins, Functions, Tools **@wip**

@@ -1,24 +1,27 @@
 const gulp = require('gulp');
-const myth = require('gulp-myth');
+const less = require('gulp-less');
 const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const minify = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
+const LessAutoprefix = require('less-plugin-autoprefix');
+const autoprefix = new LessAutoprefix({ browsers: ['last 2 versions'] });
 
-const basepath = './src/css/';
+const basepath = './src/less/';
 const destpath = './dist/';
 
 const source = [
-    basepath + '00_vendor/**/*.css',
-    basepath + '01_settings/variables.css',
-    basepath + '01_settings/layout.css',
-    basepath + '01_settings/layers.css',
-    basepath + '02_tools/**/*.css',
-    basepath + '03_generic/**/*.css',
-    basepath + '04_elements/**/*.css',
-    basepath + '05_objects/**/*.css',
-    basepath + '06_components/**/*.css',
-    basepath + '07_modules/**/*.css'
+    basepath + '00_vendor/**/*.less',
+    basepath + '01_settings/variables.less',
+    basepath + '01_settings/responsive.less',
+    basepath + '01_settings/layout.less',
+    basepath + '01_settings/layers.less',
+    basepath + '02_tools/**/*.less',
+    basepath + '03_generic/**/*.less',
+    basepath + '04_elements/**/*.less',
+    basepath + '05_objects/**/*.less',
+    basepath + '06_components/**/*.less',
+    basepath + '07_modules/**/*.less'
 ];
 
 module.exports = function build(filename, ENV) {
@@ -27,14 +30,18 @@ module.exports = function build(filename, ENV) {
         case "staging":
             gulp.src(source)
                 .pipe(concat(filename))
-                .pipe(myth())
+                .pipe(less({
+                    plugins: [autoprefix]
+                }))
                 .pipe(gulp.dest(destpath));
             break;
             
         case "prod":
             gulp.src(source)
                 .pipe(concat(filename))
-                .pipe(myth())
+                .pipe(less({
+                    plugins: [autoprefix]
+                }))
                 .pipe(minify())
                 .pipe(rename({
                     suffix: ".min"
@@ -46,7 +53,9 @@ module.exports = function build(filename, ENV) {
             gulp.src(source)
                 .pipe(sourcemaps.init())
                 .pipe(concat(filename))
-                .pipe(myth())
+                .pipe(less({
+                    plugins: [autoprefix]
+                }))
                 .pipe(rename({
                     suffix: ".map"
                 }))
