@@ -1,5 +1,5 @@
 @mixin phone {
-  @media (max-width: $at-large-phone) { @content; }
+  @media (max-width: $at-phone) { @content; }
 }
 @mixin tablet {
   @media (min-width: $at-tablet) { @content; }

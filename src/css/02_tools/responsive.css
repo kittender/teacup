@@ -1,0 +1,14 @@
+/* ---------------------------------------------------*
+ | Clean and easy management of responsive breakpoints
+ * ---------------------------------------------------*/
+
+/* $learn | https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862 */
+
+/* Breakpoints
+/* -------------------------------------------------- */
+
+@media (max-width : 599px) {} /* Phones */
+@media (min-width : 600px) {} /* Tablets portrait */
+@media (min-width : 900px) {} /* Tablets landscape */
+@media (min-width : 1200px) {} /* Desktops */
+@media (min-width : 1800px) {} /* Big screens */

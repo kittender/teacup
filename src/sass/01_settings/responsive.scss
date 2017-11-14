@@ -7,17 +7,10 @@
 // Breakpoints
 // --------------------------------------------------
 
-$at-phone: 320px;
-$at-large-phone: 599px;
+$at-phone: 599px;
 
 $at-tablet: 600px;
 $at-large-tablet: 900px;
 
 $at-screen: 1200px;
 $at-large-screen: 1800px;
-
-/* Example :
-
-   @media (max-width : $at-phone) {} // Smartphones portrait
-
- */
