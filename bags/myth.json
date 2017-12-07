@@ -1,0 +1,32 @@
+{
+    "manager": "gulp",
+    "flavor": "myth",
+    "source": "src",
+    "static": "dist",
+    "tree": [
+        "vendor",
+        "settings",
+        "tools",
+        "generic",
+        "elements",
+        "objects",
+        "components",
+        "modules"
+    ],
+    "sugar": [
+        { "root"          :  "settings"  },
+        { "layers"        :  "settings"  },
+        { "box"           :  "generic"   },
+        { "rem"           :  "generic"   },
+        { "rythm"         :  "generic"   },
+        { "image"         :  "generic"   },
+        { "breakpoints"   :  "tools"     },
+        { "family"        :  "tools"     },
+        { "media"         :  "objects"   },
+        { "flag"          :  "objects"   }
+    ],
+    "milk": [
+        "assets",
+        "sprites"
+    ]
+}

@@ -1,0 +1,23 @@
+/*/ @see https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984 /*/
+
+html {
+    font-size: 62.5%; /* set base font-size to equiv "10px", which is adapted to rem unit */
+    font-size: calc(1em * 0.625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+    box-sizing: border-box;
+}
+
+html * {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+@media (min-width: 480px) {
+    body {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "manager": "gulp",
+    "flavor": "myth",
+    "source": "brook",
+    "static": "river",
+    "tree": [
+        "forest",
+        "ocean"
+    ],
+    "sugar": [
+        { "unicorn"     :  "forest"     },
+        { "fairy"       :  "forest"     },
+        { "narval"      :  "ocean"      },
+        { "whale"       :  "ocean"      }
+    ],
+    "milk": []
+}

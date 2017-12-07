@@ -1,0 +1,27 @@
+/*/ @see http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/ /*/
+/*/
+<div class="media">
+    <img src="" alt="" class="media-figure">
+    <p class="media-body"></p>
+</div>
+
++---------+ ~~~~~~~~~~ ~~~~~
+|         | ~~~~~ ~~~~~ ~~~~
+|         | ~~~~~~~~~ ~~~~~~
+|         |
++---------+
+
+/*/
+
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media-figure {
+  margin-right: 1em;
+}
+
+.media-body {
+  flex: 1;
+}
